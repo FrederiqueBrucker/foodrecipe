@@ -1,17 +1,24 @@
 import React, { Component } from 'react';
 import '../styles/themeStyle.css';
+import Gris from '../img/fond-gris.jpg';
 
 class ThemeCard extends Component{
   render(){
     return (
       <div className="globalTheme">
+
+          <div className="presentation">
+            <h1>Bienvenue sur Food Recipe</h1>
+          </div>
+
           <div className="searchbar">
-              <input type="text" name="search" placeholder="Search.." />
+              <input type="text" name="search" placeholder="Rechercher" />
           </div>
 
           <div className="allCard">
               <div className="Card">
                 <p>Salades</p>
+                <img src={Gris}/>
               </div>
 
               <div className="Card">
