@@ -1,0 +1,30 @@
+.allCard{
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.Card{
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.3);
+  width: 200px;
+  margin: 20px;
+  text-align: center;
+}
+
+.searchbar{
+  display: flex;
+  justify-content: flex-end;
+}
+
+input[type=text] {
+  width: 130px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+/* When the input field gets focus, change its width to 100% */
+input[type=text]:focus {
+  width: 100%;
+}
