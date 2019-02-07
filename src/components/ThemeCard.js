@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import '../styles/themeStyle.css';
+import { Link } from 'react-router-dom';
 import Salade from '../img/salade.jpg';
 import Apero from '../img/apero.jpg';
 import Desserts from '../img/desserts.jpg';
@@ -25,25 +26,34 @@ class ThemeCard extends Component{
           </div>
 
           <div className="allCard">
-              <div className="Card">
-                <p>Salades</p>
-                <img src={Salade}/>
-              </div>
+            <Link to="/recettes/salade">
+                <div className="Card">
+                  <p>Salades</p>
+                  <img src={Salade}/>
+                </div>
+            </Link>
 
+            <Link to="/recettes/apero">
               <div className="Card">
                 <p>Apéro</p>
                 <img src={Apero} />
               </div>
+            </Link>
 
+            <Link to="recettes/desserts">
               <div className="Card">
                 <p>Desserts</p>
                 <img src={Desserts}/>
               </div>
+            </Link>
 
-              <div className="Card">
+            <Link to="/recettes/brunch" >        
+            <div className="Card">
                 <p>Brunch</p>
                 <img src={Brunch}/>
               </div>
+              </Link>      
+ 
 
               <div className="Card">
                 <p>Veggie</p>

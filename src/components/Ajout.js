@@ -37,6 +37,7 @@ class Ajout extends Component{
                   name="type" 
                   id="type"
                   onChange={event => this.setState({ type: event.target.value })}>
+                      <option value="">Sélectionner le type</option>
                       <option value="salade">Salade</option>
                       <option value="apero">Apéro</option>
                       <option value="desserts">Desserts</option>
