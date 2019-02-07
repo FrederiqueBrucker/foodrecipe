@@ -1,0 +1,39 @@
+.AjoutStyle{
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Form{
+  margin-top: 50px;
+}
+
+.formrecette{
+  display: flex;
+  flex-direction: column;
+}
+
+.Form .title{
+  border:none;
+  width: 300px;
+  height: 30px;
+  padding: 5px;
+}
+
+.Form textarea{
+  border: none;
+}
+
+.Form .imageRecette{
+    border:none;
+  width: 300px;
+  height: 30px;
+  padding: 5px;
+}
+
+.button-enregistrer{
+  border: none;
+  width: 150px;
+  margin-top: 50px;
+  padding: 10px;
+}

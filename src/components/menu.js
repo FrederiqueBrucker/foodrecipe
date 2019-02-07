@@ -10,7 +10,7 @@ class Menu extends Component{
         <div className="wrapperMenu">
           <p className="logo">Food Recipe</p>
           <Link to="/home" >Accueil</Link>
-          <Link to="/red">Mon frigo</Link>
+          <Link to="/ajout">Ajouter une recette</Link>
           <Link to="/green">Favoris</Link>
           <Link to="/yellow">Profil</Link>
         </div>

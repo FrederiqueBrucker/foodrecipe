@@ -1,45 +1,54 @@
-.presentation{
+.presentation {
   background-color: #ffffff;
-  margin:0;
+  margin: 0;
   box-shadow: 1px 1px 12px #555;
+  padding: 10px 0 10px 10px;
+  ;
 }
 
-h1{
-  margin-top: 0;
+h1 {
+  margin: 0;
 }
 
 
-.searchbar{
+.searchbar {
   display: flex;
   justify-content: flex-end;
   border: none;
+  margin-top: 30px;
 }
 
-input[type=text] {
+.baraccueil[type=text] {
   width: 200px;
   -webkit-transition: width 0.4s ease-in-out;
   transition: width 0.4s ease-in-out;
   border: none;
   height: 30px;
   border-radius: 5px;
+  padding: 5px;
 }
 
 /* When the input field gets focus, change its width to 100% */
-input[type=text]:focus {
+.baraccueil[type=text]:focus {
   width: 100%;
 }
 
-.allCard{
+.allCard {
   width: 100%;
   display: flex;
   flex-flow: row wrap;
+  margin-top: 50px;
 }
 
-.Card{
+.Card {
   background-color: white;
   border-radius: 5px;
   box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.3);
   width: 200px;
   margin: 20px;
   text-align: center;
+}
+
+.Card img {
+  width: 200px;
 }
