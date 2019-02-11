@@ -1,0 +1,14 @@
+.liste_recettes{
+background-color: #ffffff;
+    margin-top: 50px;
+    border-radius: 5px;
+    padding-bottom: 50px;
+}
+
+.recettes_img img{
+    max-width: 300px;
+}
+
+.recettes_affiche{
+    display: flex;
+}

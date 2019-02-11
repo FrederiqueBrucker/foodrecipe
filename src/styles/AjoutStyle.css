@@ -11,6 +11,12 @@
 .formrecette{
   display: flex;
   flex-direction: column;
+  padding-bottom: 80px;
+}
+
+.Form label{
+  margin-bottom: 15px;
+  font-weight: bold;
 }
 
 .Form .title{
@@ -20,13 +26,23 @@
   padding: 5px;
 }
 
+.Form select{
+  border:none;
+  padding: 10px;
+  margin-top: 15px;
+  width: 310px;
+  }
+
+
 .Form textarea{
   border: none;
+  margin-top: 15px;
+  padding: 10px;
 }
 
 .Form .imageRecette{
-    border:none;
-  width: 300px;
+  border:none;
+  width: 445px;
   height: 30px;
   padding: 5px;
 }
@@ -36,4 +52,14 @@
   width: 150px;
   margin-top: 50px;
   padding: 10px;
+  cursor: pointer;
+  background-color: #8E4B7F;
+  color: #ffffff;
+  font-weight: bold;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.button-enregistrer:hover{
+  background-color: #5b2f51;
 }

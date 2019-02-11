@@ -2,8 +2,7 @@
   background-color: #ffffff;
   margin: 0;
   box-shadow: 1px 1px 12px #555;
-  padding: 10px 0 10px 10px;
-  ;
+  padding: 20px 0 15px 15px;
 }
 
 h1 {
@@ -38,7 +37,13 @@ h1 {
   display: flex;
   flex-flow: row wrap;
   margin-top: 50px;
+  padding-bottom: 240px;
 }
+
+.allCard a{
+text-decoration: none;
+}
+
 
 .Card {
   background-color: white;
@@ -47,8 +52,16 @@ h1 {
   width: 200px;
   margin: 20px;
   text-align: center;
+      height: 185px;
 }
 
 .Card img {
   width: 200px;
+  height: 133px;
+}
+
+.Card p{
+  padding-top: 15px;
+  color: #000000;
+  font-weight: bold;
 }

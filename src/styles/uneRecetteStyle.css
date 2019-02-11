@@ -1,0 +1,39 @@
+.une_recette{
+    background-color: #ffffff;
+    margin-top: 100px;
+    border-radius: 5px;
+    padding-bottom: 50px;
+}
+
+.une_recette h2{
+    text-align: center;
+    padding-top: 20px;
+}
+
+.une_recette img{
+    text-align: center;
+    max-width: 500px;
+}
+
+.img_unerecette{
+text-align: center;
+}
+
+.ingredients_liste{
+    margin-bottom: 50px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.etape_title{
+    font-weight: bold;
+    text-align: center;
+}
+
+.etape_liste{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+

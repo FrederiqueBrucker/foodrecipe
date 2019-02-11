@@ -13,8 +13,12 @@ class Ajout extends Component{
   };
 
   enregistrer(){
-    axios.post('https://test.corentindesfarges.fr/recettes', this.state);
+    axios.post('https://test.corentindesfarges.fr/recettes', this.state)
+      .then(() => {
+        this.setState({title:"", type:"", ingredients:"", description:"", imageUrl:""});
+      });
   }
+
 
   render(){
     return (
@@ -56,7 +60,7 @@ class Ajout extends Component{
                 name="ingredients" 
                 id="ingredients" 
                 placeholder="Oeufs, Farine, Sel, Poivre..." 
-                rows="7" cols="41"
+                rows="10" cols="60"
                 value={this.state.ingredients} 
                 onChange={event => this.setState({ ingredients: event.target.value })}
                 >
@@ -68,7 +72,7 @@ class Ajout extends Component{
                 name="description" 
                 id="description" 
                 placeholder="Description des étapes de préparation" 
-                rows="7" cols="41"
+                rows="10" cols="60"
                 value={this.state.description}
                 onChange={event => this.setState({ description: event.target.value })}
                 >
@@ -96,3 +100,5 @@ class Ajout extends Component{
 
 
 export default Ajout;
+
+
