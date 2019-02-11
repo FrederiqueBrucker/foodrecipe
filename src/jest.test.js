@@ -1,7 +1,9 @@
 import React from 'react';
-import renderer from 'react-test-renderer'; 
+import {shallow} from 'enzyme';
+import renderer from 'react-test-renderer';
 
-import ListeRecette from './liste_recettes.js';
+import ListeRecette from './components/liste_recettes.js';
+import UneRecette from './components/une_recette.js';
 
 describe('<ListeRecette />', () =>{
 
@@ -12,3 +14,10 @@ describe('<ListeRecette />', () =>{
         expect(tree).toMatchSnapshot();
     });
 });
+
+describe('<UneRecette />', () => {
+    test('contains five div', () => {
+        const wrapper = shallow(<UneRecette />);
+        expect(wrapper.find('div')).toHaveLength(5);
+    })
+})
